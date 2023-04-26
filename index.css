@@ -108,6 +108,10 @@ header a{
 	}
 }
 
+.Head__burger{
+	display: none;
+}
+
 .Head__menuHead{
 	display: flex;
 	flex-wrap: wrap;
