@@ -245,7 +245,6 @@ header a{
 	margin-right: auto;
 	width: 375px;
 	height: 300px;
-	padding-bottom: 100%;
 	z-index: 2;
 	position: absolute;
 	background: linear-gradient(45deg, #a4a4a4,rgb(196, 164, 153,1),#a4a4a4);
