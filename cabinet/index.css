@@ -9,7 +9,7 @@
 }
 
 
-
+@media (min-width: 500px){
 
 @keyframes backWapperMenu{
  0%{
@@ -619,4 +619,6 @@ header a{
 	margin-left: auto;
 	margin-right: 0px;
 	margin-top: 38px;
+}
+
 }
