@@ -184,17 +184,22 @@ let priceALL = document.getElementById('price_All');
 
 //priceProductAll.textContent = +(priceProductOne.textContent.slice(0,-2)) * +(quantityProduct.textContent) + ' ₽';
 for(let i = 0 ; i<masProducts.length; i++){
-	quantityProducts[i].addEventListener('change',function(){
-		if(quantityProducts[i].childNodes[1].value <= 0){
+	quantityProducts[i].addEventListener('input',function(){
+		if(quantityProducts[i].childNodes[1].value < 0){
+			quantityProducts[i].childNodes[1].value = 0;
 			priceNds.textContent = 0 + ' ₽';
 			priceALL.textContent = 0 + ' ₽';
 			priceTotal.textContent = priceALL.textContent;
 		}else{
-			priceProductsAll[i].textContent = +(priceProductsOne[i].textContent.slice(0,-2)) * +(quantityProducts[i].childNodes[1].value) + ' ₽';
-			priceALL.textContent= (+(priceALL.textContent.slice(0,-2)) +( +(priceProductsOne[i].textContent.slice(0,-2)) * +(quantityProducts[i].childNodes[1].value)));
-			priceNds.textContent = Math.round(priceALL.textContent*0.16)+ ' ₽';
-			priceALL.textContent = priceALL.textContent + ' ₽';
-			priceTotal.textContent = priceALL.textContent;
+				priceALL.textContent = 0;
+				priceProductsAll[i].textContent = +(priceProductsOne[i].textContent.slice(0,-2)) * +(quantityProducts[i].childNodes[1].value) + ' ₽';
+				for(let e = 0 ; e<priceProductsAll.length; e++){			
+					priceALL.textContent = +(priceALL.textContent) + +(priceProductsAll[e].textContent.slice(0,-2))
+				}	
+				priceNds.textContent = Math.round(priceALL.textContent*0.16)+ ' ₽';
+				priceALL.textContent = priceALL.textContent + ' ₽';
+				priceTotal.textContent = priceALL.textContent;
+			
 		}
 	})
 	
