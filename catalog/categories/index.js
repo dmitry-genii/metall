@@ -158,3 +158,8 @@ pageCont.addEventListener('click' , function(){
 	regions.style.display = '';
 	menuCatalogItems[0].style.display = '';
 })
+
+let btnBasketBlock = document.querySelector(".product-all__self__item__basket__block");
+btnBasketBlock.addEventListener('click',function(){
+	location.href="../../pageBasket/Корзина.html"
+})
