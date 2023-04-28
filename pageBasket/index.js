@@ -162,16 +162,6 @@ pageBasketCont.addEventListener('click' , function(){
 	menuCatalogItems[0].style.display = '';
 })
 
-document.addEventListener('keydown', function(event) {
- 	if (event.code == 'KeyZ') {
-     	let container  = document.getElementById('container');
-     	container.innerHTML = `
-     				<p class="contentBasket-block__info-none">В вашей корзине пока нет товаров.</p>
-					<a href="../catalog/index.html" class="contentBasket-block__info__btn-catalog">В каталог</a>
-				`;
-    }
-});
-
 const masProducts = document.querySelectorAll('.contentBasket-block__info-all-profucts_table_content-name-product')
 let quantityProducts = document.querySelectorAll('#quantity');
 let priceProductsOne = document.querySelectorAll('#price_of_one');
@@ -184,12 +174,25 @@ let priceALL = document.getElementById('price_All');
 
 //priceProductAll.textContent = +(priceProductOne.textContent.slice(0,-2)) * +(quantityProduct.textContent) + ' ₽';
 for(let i = 0 ; i<masProducts.length; i++){
+	if(quantityProducts[i].childNodes[1].value != 0){
+		priceALL.textContent = 0;
+		priceProductsAll[i].textContent = +(priceProductsOne[i].textContent.slice(0,-2)) * +(quantityProducts[i].childNodes[1].value) + ' ₽';
+		for(let e = 0 ; e<priceProductsAll.length; e++){			
+			priceALL.textContent = +(priceALL.textContent) + +(priceProductsAll[e].textContent.slice(0,-2))
+		}	
+		priceNds.textContent = Math.round(priceALL.textContent*0.16)+ ' ₽';
+		priceALL.textContent = priceALL.textContent + ' ₽';
+		priceTotal.textContent = priceALL.textContent;
+	}
 	quantityProducts[i].addEventListener('input',function(){
 		if(quantityProducts[i].childNodes[1].value < 0){
 			quantityProducts[i].childNodes[1].value = 0;
-			priceNds.textContent = 0 + ' ₽';
-			priceALL.textContent = 0 + ' ₽';
-			priceTotal.textContent = priceALL.textContent;
+			if(+(priceALL.textContent.slice(0,-2)) !== 0){
+			}else{
+				priceNds.textContent = 0 + ' ₽';
+				priceALL.textContent = 0 + ' ₽';
+				priceTotal.textContent = priceALL.textContent;
+			}	
 		}else{
 				priceALL.textContent = 0;
 				priceProductsAll[i].textContent = +(priceProductsOne[i].textContent.slice(0,-2)) * +(quantityProducts[i].childNodes[1].value) + ' ₽';
@@ -208,3 +211,17 @@ for(let i = 0 ; i<masProducts.length; i++){
 
 
 alert('click KeyZ')
+
+
+
+document.addEventListener('keydown', function(event) {
+ 	if (event.code == 'KeyZ') {
+     	let container  = document.getElementById('container');
+     	container.innerHTML = `
+     				<p class="contentBasket-block__info-none">В вашей корзине пока нет товаров.</p>
+					<a href="../catalog/index.html" class="contentBasket-block__info__btn-catalog">В каталог</a>
+				`;
+    }
+});
+
+

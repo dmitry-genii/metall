@@ -137,9 +137,13 @@ header a{
 	cursor: pointer;
 }
 
-.Head__menuHead__regionHead__region:hover{
-	opacity: 0.7;
+.Head__menuHead__regionHead:focus{
+	outline: 2px solid red;
 }
+/*
+.Head__menuHead__regionHead__region:hover {
+	opacity: 0.7;
+}*/
 
 .Head__menuHead__regionHead__line{
 	width: 8px;
