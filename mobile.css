@@ -553,6 +553,7 @@ header a{
 	padding: 0;
 	margin-right: auto;
 	overflow: auto;
+	padding-bottom: 10px;
 }
 
 .popularBlock__header{
@@ -1283,6 +1284,8 @@ header a{
 	list-style: inside;
 	margin-left: auto;
 	margin-right: auto;
+	width:80%;
+	padding-right: 15px;
 }
 
 .menu-footer__info__lists-item_href{

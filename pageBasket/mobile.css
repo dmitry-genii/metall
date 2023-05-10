@@ -1,5 +1,10 @@
 @media (min-width: 0) and (max-width: 500px){
 /*Page*/
+body{
+	width: 375px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 .contentBasket-block__name{
 	margin-left: 10px;

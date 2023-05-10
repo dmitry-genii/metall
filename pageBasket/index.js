@@ -33,28 +33,6 @@ btnToCatalog.addEventListener('dblclick', function(){
 
 let Block = document.querySelector('html');
 
-let bottomLine = document.querySelector('.popularBlock__bottom-line')
-let bottomLineActive = document.querySelector('.popularBlock__bottom-line-active')
-
-/*bottomLine.addEventListener('mousemove', function(){
-	//bottomLineActive.addEventListener('mouseover', function(){
-		let ger = event.clientX;
-		
-		bottomLineActive.style.marginLeft= ger/20 + '%';
-		if(bottomLineActive.style.marginLeft.slice(0,2) < 12  || bottomLineActive.style.marginLeft.slice(0,2) < 13 || bottomLineActive.style.marginLeft.slice(0,2) < 14){
-			bottomLineActive.style.marginLeft = '';
-		}
-	//})
-	
-
-	if(ger >= 618){
-		bottomLineActive.style.marginLeft= 580+ 'px';
-	}
-	if(ger <= 265){
-		bottomLineActive.style.marginLeft= '';
-	}
-})*/
-
 
 let BlockHeadFirst = document.querySelector('.Head__banner_all_head');
 let headerAll = document.querySelector('.Head');
@@ -81,14 +59,6 @@ menuCatalog[1].addEventListener("click", function(){
 		
 	}
 })
-
-/*
-BlockHeadFirst.addEventListener('click' , function(){
-		menuCatalogItems[1].style.display = '';
-		regions.style.display = '';
-		menuCatalogItems[0].style.display = '';
-})*/
-	
 
 
 
