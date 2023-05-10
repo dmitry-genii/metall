@@ -451,7 +451,7 @@ header a{
 	margin-right: auto;
 	display: none;
 	height: 100%;
-	background: #e4e4e4;
+	background: white;
 	padding-top: 100px;
 	padding-bottom: 100%;
 }
@@ -673,6 +673,10 @@ header a{
 	transition-duration: 0.3s
 }
 
+.services__items__self:nth-child(1){
+	margin-left: 0;
+}
+
 .services__items__self-thrid{
 	/*margin-left: 30px;*/
 }
@@ -723,7 +727,7 @@ header a{
 	padding-top: 100px;
 	padding-bottom: 100%;
 	display: none;
-	background: #e4e4e4;
+	background: white;
 	overflow-y: hidden;
 }
 
@@ -777,10 +781,14 @@ header a{
 .stocks__all-products__item{
 	width:401px;
 	height:400px;
-	background: white;
+	background: #e4e4e4;
 	padding-top: 23px;
 	margin-top: 20px;
 	margin-left: 30px;
+}
+
+.stocks__all-products__item:nth-child(1){
+	margin-left: 0;
 }
 
 .stocks__all-products__item-info{
@@ -965,7 +973,7 @@ header a{
 	display: none;
 	padding-top: 50px;
 	padding-bottom: 100%;
-	background: #f6f6f6;
+	background: white;
 }
 
 .useful__header{
@@ -1024,6 +1032,10 @@ header a{
 	transition-duration: 0.3s;
 }
 
+.useful__all-products__item:nth-child(1){
+	margin-left: 0px;
+}
+
 .useful__all-products__item:hover{
 	color: white;
 	background: #C0511F;
@@ -1066,7 +1078,7 @@ header a{
 	display: none;
 	padding-top: 50px;
 	padding-bottom: 100%;
-	background: #f6f6f6;
+	background: white;
 }
 .parthers__header_head{
 	margin-top: 195px;

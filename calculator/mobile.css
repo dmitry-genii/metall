@@ -1,5 +1,9 @@
 @media (min-width: 0) and (max-width: 500px){
 
+body{
+	background: #F5F5F5;
+}
+
 .name-search-block__name{
 	font-family: 'Montserrat';
 	font-style: normal;
@@ -17,17 +21,13 @@
 }
 
 .container-content__block-info{
-	background: #f4f4f4;
+	background: white;
 	width: 347px;
 	height: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	display: flex;
 	flex-wrap: wrap;
-}
-
-.container-content__block-info__product{
-	
 }
 
 .container-content__block-info__product-img{
@@ -111,7 +111,8 @@
 	width: 330px;
 	height: 550px;
 	padding: 10px;
-	background: #f4f4f4;
+	background: white;
+	margin-bottom: 20px;
 }
 
 .container-content__block-options__title{
@@ -216,6 +217,7 @@
 	color: #FFFFFF;
 	transition-duration: 0.3s;
 	margin-top: 30px;
+	margin-left: 20px;
 }
 
 .container-content__block-options__btn:hover{
@@ -226,6 +228,10 @@
 .container-content__block-options__btn-text{
 	padding: 0;
 	margin: 0;
+}
+
+.menu-footer{
+	margin-top: 0;
 }
 
 @keyframes activeCheck{

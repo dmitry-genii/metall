@@ -441,19 +441,9 @@ header a{
 	display: none;
 }
 
-.container-descreption__detail-btn{
-	position: absolute;
-	margin-left: -180px;	
-	font-family: 'Lato';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 19px;
-	color: #878787;
-}
-
 .container-descreption__btn{
-	background: none;
+	background: #e4e4e4;
+	padding: 5px 20px;
 	border:none;
 	font-family: 'Lato';
 	font-style: normal;
@@ -462,6 +452,24 @@ header a{
 	line-height: 140%;
 	padding-left: 20px;
 	cursor: pointer;
+}
+
+.container-descreption__detail-btn{
+	position: absolute;
+	background: none;
+	left: 260px;	
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: #878787;
+}
+
+
+
+.container-descreption__characteristics-btn{
+	margin-right: 105px;
 }
 
 .container-descreption__table{

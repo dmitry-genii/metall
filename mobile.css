@@ -77,8 +77,6 @@ html{
 	margin: 0px;
 	padding: 0;
 	overflow-x: hidden;
-	background-size: cover;
-	
 	}
 
 
@@ -538,7 +536,7 @@ header a{
 	margin-left: auto;
 	margin-right: auto;
 	height: 100%;
-	background: #e4e4e4;
+	background: white;
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
@@ -715,8 +713,6 @@ header a{
 }
 */
 #services{
-
-
 	height: 100%;
 	z-index: 0;
 	margin-top: 0px;
@@ -731,8 +727,7 @@ header a{
 	margin-right: auto;
 	height: 100%;
 	padding-bottom: 100px;
-	background: #e4e4e4;
-	background: linear-gradient(256.7deg, #ECECE9 0%, #F6F6F6 100%);
+	background: white;
 }
 
 .services__header{
@@ -1062,10 +1057,9 @@ header a{
 	margin-left: auto;
 	margin-right: auto;
 	height: 100%;
-	
 	padding-top: 50px;
 	padding-bottom: 100px;
-	background: #f6f6f6;
+	background: white;
 }
 
 .useful__header{
@@ -1172,7 +1166,7 @@ header a{
 	
 	padding-top: 50px;
 	padding-bottom: 100px;
-	background: #f6f6f6;
+	background: white;
 }
 .parthers__header_head{
 	margin-top: 0px;
@@ -1264,7 +1258,7 @@ header a{
 	font-family: 'Montserrat';
 	font-style: normal;
 	font-weight: 500;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 48px;;
 	text-decoration: none;
 	color: #C0511F;
@@ -1283,7 +1277,7 @@ header a{
 	font-family: 'Montserrat';
 	font-style: normal;
 	font-weight: 500;
-	font-size: 10px;
+	font-size: 13px;
 	line-height: 18px;
 	color: white;
 	list-style: inside;
